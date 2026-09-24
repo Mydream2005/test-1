@@ -2,4 +2,6 @@ import fastapi
 
 print("Hello, World!")
 
-这是一个错误
+app = fastapi.FastAPI()
+
+@app.get("/")
