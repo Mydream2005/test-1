@@ -5,6 +5,6 @@ print("Hello, World!")
 app = fastapi.FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"Hello": "World"}
+def read_root(age: int):
+    return {"Hello": "World", "My-Age": age}
 
